@@ -1,13 +1,57 @@
 
-Walk me through the process that occurs when I type a url into the search bar and hit enter.
-You have an excel file you are parsing in node that is 3000 lines and a method that you have to run on every line. The method can not be optimized any further. It runs synchronously. How can you optimize this?
-When would you (a) not put CSS <link> between <head></head>,  and (b) JavaScript <script></script> just before </body>?
-When you type google.com into the browser what happens, go into as much detail as possible
-How do you go about optimizing a webpage?
+### Protocol Questions
+* Walk me through the process that occurs when I type a url into the search bar and hit enter.
+* When you type google.com into the browser what happens, go into as much detail as possible
+
+### HTML Questions
+* When would you (a) not put CSS <link> between <head></head>,  and (b) JavaScript <script></script> just before </body>?
+* How do you go about optimizing a webpage?
+* Write the HTML5 doctype. What is it used for?
+* Categorize div, span, p, h1, and section as inline or block HTML elements.
+* What is a new input element type included in HTML5?
+
 
 ### CSS
 * What is the css box model
 * Explain the stacking context?
+* Explain the difference between flex and grid display
+* Given three buttons, how can you increase the click area of the buttons without changing the buttons’ size or the space between the buttons?
+* Given the following HTML, how do you select all of the `<li>` elements using CSS? How do you select all `<li>` elements except the ones inside of the `<ul>`?
+```html
+<div>
+   <ol>
+    <li></li>
+    <li></li>
+    <li>
+     <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+   </li>
+  <ol>
+</div>
+```
+* How is the following CSS selector interpreted by the browser?   
+```css
+div p span {  }
+```
+
+* What are all of the potential values of the CSS property display?
+
+* Which CSS selector takes precedence, given a div with an ID of foo?
+```css
+#foo { }
+div[id=’foo’] div { }
+```
+* Using only css (and not css3 aka no flexbox) create a horizontally and vertically centered red circle with dimensions 100x100 with a grey 10px border - should be dynamically centered so resizing the window will keep it centered. Part 2 - On hover, the circle should split in half and have a white divider down the middle
+
+* Rewrite this single CSS property as two shorter CSS properties.
+```css
+div {
+  margin: 3px 7px 3px 4px;
+}
+```
 
 ### System Architecture Questions
 * What are the pros and cons to a microservice architecture?
@@ -15,6 +59,7 @@ How do you go about optimizing a webpage?
 
 ### Debugging
 * There is a button on the page, when you click it the page is non-responsive and the pinwheel starts spinning, how do you go about debugging this
+* How would you go about debugging a program that crashes at different lines of code each time it’s run.
 
 ### Database
 * Whats the difference between a relational db like sql and non-relational db like mongo
@@ -56,82 +101,47 @@ How do you go about optimizing a webpage?
 * Depth First Traversal of BST
 * Given a LinkedList with four nodes, how would you remove the third node? How would you remove the head node?
 
+### LEETCODE Questions
+
+* Given five candles, each candle yields one residue when it completes burning. For every two residues, we can create a new candle. Write a function that returns the greatest number of candles we can burn if we reuse the residue.
+
+* Write a function that takes in an input array [1, 2, 3, 4, 5] and returns an output array [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]. What is the big O notation of your solution?
+
+* Write a function that takes in an input array [1, 3, 3, 4, 5, 1, 6, 1] and returns an output array [4, 5, 6]. What is the big O notation of your solution?
+
+* Return the first duplicate of an array of integers
+
+* You have a shit computer with 64 kb of RAM. Given a huge data set of unsorted integers (think millions) how would you sort these with the memory constraints in mind. (You can only read in a certain amount of data at one time, but are not limited to the number of actual files you create/read/write to on disk)
+
+
+### Frontend Programming Question
+* Given an API endpoint and JSON data schema, use vanilla JS or whatever framework desired to create a search bar that automatically provides suggestions fetched from the API as a dropdown when the user types. If the user selects a suggestion from the dropdown, the dropdown should close and the text should appear in the search bar.
+* Show me how you would turn your resume into a static website using HTML and CSS.
+
 ### Javascript Quirks
 * What is the output of the following expressions?
+```javascript
+   True == 1
+   False === 0
+   1 + ‘1’
+   1 + 1 + ‘1’ + ‘1’
+   True + 1
+   False - 1
+```
 
-    * True == 1
-    * False === 0
-    * 1 + ‘1’
-    * 1 + 1 + ‘1’ + ‘1’
-    * True + 1
-    * False - 1
+* Using code, please demonstrate an asynchronous call in JavaScript?
 
+* In ES2015 (aka ES6) we have Modules. What options do you have if you wanted similar functionality in ES5.
 
-Using code, please demonstrate an asynchronous call in JavaScript?
-
-
-In ES2015 (aka ES6) we have Modules. What options do you have if you wanted similar functionality in ES5.
-
-
-Please describe the complexity of the following jQuery expression:
-$("#insPolicy").hide();
-$("#insForms").show();
-$("#btnForms").addClass("active").attr("data-dirty", true);
-$("#btnPolicy").removeClass("active").attr("data-dirty", false);
-
-
-
-Write a function that takes in an input array [1, 2, 3, 4, 5] and returns an output array [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]. What is the big O notation of your solution?
-
-Write a function that takes in an input array [1, 3, 3, 4, 5, 1, 6, 1] and returns an output array [4, 5, 6]. What is the big O notation of your solution?
-
-Show me how you would turn your resume into a static website using HTML and CSS.
-
-Given three buttons, how can you increase the click area of the buttons without changing the buttons’ size or the space between the buttons?
-
-Given the following HTML, how do you select all of the <li> elements using CSS? How do you select all <li> elements except the ones inside of the <ul>?
-
-<div>
-  <ol>
-    <li></li>
-    <li></li>
-    <li>
-     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-     </ul>
-   </li>
-  <ol>
-</div>
-
-How is the following CSS selector interpreted by the browser?
-
-div p span {  }
-
-What are all of the potential values of the CSS property display?
-
-Which CSS selector takes precedence, given a div with an ID of foo?
-
-#foo { }
-div[id=’foo’] div { }
-
-Rewrite this single CSS property as two shorter CSS properties.
-
-div {
-  margin: 3px 7px 3px 4px;
-}
-
-Write the HTML5 doctype. What is it used for?
-
-Categorize div, span, p, h1, and section as inline or block HTML elements.
-
-What is a new input element type included in HTML5?
-
-Given an API endpoint and JSON data schema, use vanilla JS or whatever framework desired to create a search bar that automatically provides suggestions fetched from the API as a dropdown when the user types. If the user selects a suggestion from the dropdown, the dropdown should close and the text should appear in the search bar.
-
-What happens when this code is run? What appears in the console and in what order? How can we make every console.log be a number?
-
+* Please describe the complexity of the following jQuery expression:
+```javascript
+   $("#insPolicy").hide();
+   $("#insForms").show();
+   $("#btnForms").addClass("active").attr("data-dirty", true);
+   $("#btnPolicy").removeClass("active").attr("data-dirty", false);
+```
+* What happens when this code is run? What appears in the console and in what order? How can we make every console.log be a number?
+```javascript
 function Foo() {
   this.value = 42;
   this.method = function() {
@@ -144,21 +154,12 @@ const foo = new Foo();
 foo.method();
 const bar = foo.method;
 bar();
+```
 
-
-Given five candles, each candle yields one residue when it completes burning. For every two residues, we can create a new candle. Write a function that returns the greatest number of candles we can burn if we reuse the residue.
-
-
-You have a shit computer with 64 kb of RAM. Given a huge data set of unsorted integers (think millions) how would you sort these with the memory constraints in mind. (You can only read in a certain amount of data at one time, but are not limited to the number of actual files you create/read/write to on disk)
-
-Return the first duplicate of an array of integers
-
-Using only css (and not css3 aka no flexbox) create a horizontally and vertically centered red circle with dimensions 100x100 with a grey 10px border - should be dynamically centered so resizing the window will keep it centered. Part 2 - On hover, the circle should split in half and have a white divider down the middle
+# Basic Program Design
+You have an excel file you are parsing in node that is 3000 lines and a method that you have to run on every line. The method can not be optimized any further. It runs synchronously. How can you optimize this?
 
 
 
 
-
-
-How would you go about debugging a program that crashes at different lines of code each time it’s run.
 
