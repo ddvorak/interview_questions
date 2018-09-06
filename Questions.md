@@ -1,7 +1,19 @@
+### Soft Skills
+* How do you keep up with the latest tech
+* Do you have any preferred JavaScript libraries or frameworks (don’t list more than three). For one of the  libraries/frameworks, please briefly state how you used it to solve a problem.  
+* [Soft Questions to Ask Interviewer](https://gist.github.com/vcarl/14275c72baf976ff1665392e14225dcc)
 
 ### Protocol Questions
-* Walk me through the process that occurs when I type a url into the search bar and hit enter.
 * When you type google.com into the browser what happens, go into as much detail as possible
+
+### Backend/API design and Understanding
+* What is REST
+* Socket vs http requests
+
+
+### Debugging
+* There is a button on the page, when you click it the page is non-responsive and the pinwheel starts spinning, how do you go about debugging this
+* How would you go about debugging a program that crashes at different lines of code each time it’s run.
 
 ### HTML Questions
 * When would you (a) not put CSS <link> between <head></head>,  and (b) JavaScript <script></script> just before </body>?
@@ -53,14 +65,6 @@ div {
 }
 ```
 
-### System Architecture Questions
-* What are the pros and cons to a microservice architecture?
-* Explain how you would go about creating a url shortening service like bit.ly.
-
-### Debugging
-* There is a button on the page, when you click it the page is non-responsive and the pinwheel starts spinning, how do you go about debugging this
-* How would you go about debugging a program that crashes at different lines of code each time it’s run.
-
 ### Database
 * Whats the difference between a relational db like sql and non-relational db like mongo
 * Would you ever want to index a database ? (something along those lines )
@@ -75,48 +79,11 @@ div {
 * When would you consider using JavaScript prototypes?
 
 ### Node Related
-* What is REST
-* Socket vs http requests
-
-### Soft Skills
-* How do you keep up with the latest tech
-* Do you have any preferred JavaScript libraries or frameworks (don’t list more than three). For one of the  libraries/frameworks, please briefly state how you used it to solve a problem.
+* How do I use es6 syntax in Node?
 
 ### Testing
 * What are unit tests
 * Whats the difference between unit tests and continuous integration tests
-
-
-### Angular
-* What is the difference between $rootscope and $scope in Angular?
-
-
-### Programming Paradigms
-* Please describe functional programming in JavaScript and when you might consider using it?
-
-
-### Computer Science
-* Explain what a stack is and what it is used for.
-* Merge Sort
-* Depth First Traversal of BST
-* Given a LinkedList with four nodes, how would you remove the third node? How would you remove the head node?
-
-### LEETCODE Questions
-
-* Given five candles, each candle yields one residue when it completes burning. For every two residues, we can create a new candle. Write a function that returns the greatest number of candles we can burn if we reuse the residue.
-
-* Write a function that takes in an input array [1, 2, 3, 4, 5] and returns an output array [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]. What is the big O notation of your solution?
-
-* Write a function that takes in an input array [1, 3, 3, 4, 5, 1, 6, 1] and returns an output array [4, 5, 6]. What is the big O notation of your solution?
-
-* Return the first duplicate of an array of integers
-
-* You have a shit computer with 64 kb of RAM. Given a huge data set of unsorted integers (think millions) how would you sort these with the memory constraints in mind. (You can only read in a certain amount of data at one time, but are not limited to the number of actual files you create/read/write to on disk)
-
-
-### Frontend Programming Question
-* Given an API endpoint and JSON data schema, use vanilla JS or whatever framework desired to create a search bar that automatically provides suggestions fetched from the API as a dropdown when the user types. If the user selects a suggestion from the dropdown, the dropdown should close and the text should appear in the search bar.
-* Show me how you would turn your resume into a static website using HTML and CSS.
 
 ### Javascript Quirks
 * What is the output of the following expressions?
@@ -156,8 +123,53 @@ const bar = foo.method;
 bar();
 ```
 
+### Angular
+* What is the difference between $rootscope and $scope in Angular?
+
+### Frontend Programming Question
+* Given an API endpoint and JSON data schema, use vanilla JS or whatever framework desired to create a search bar that automatically provides suggestions fetched from the API as a dropdown when the user types. If the user selects a suggestion from the dropdown, the dropdown should close and the text should appear in the search bar.
+* Show me how you would turn your resume into a static website using HTML and CSS.
+* Given 2 identical DOM trees (not same trees) and one element of the first DOM tree, how would you find this element in the second DOM tree?
+* Write an Emitter class. Support Subscribing to events. Support Emitting events. Support Unsubscribing from events.
+* Implement a simple observable
+* Design/code a poll widget
+* Given a picture, how would you hide/show a child picture on hovering on this parent? How would you ensure clicking on this picture would go to a specific link? How would you ensure the child is positioned in the top right of the parent picture?
+
 # Basic Program Design
-You have an excel file you are parsing in node that is 3000 lines and a method that you have to run on every line. The method can not be optimized any further. It runs synchronously. How can you optimize this?
+* You have an excel file you are parsing in node that is 3000 lines and a method that you have to run on every line. The method can not be optimized any further. It runs synchronously. How can you optimize this?
+
+### System Architecture Questions
+* What are the pros and cons to a microservice architecture?
+* Explain how you would go about creating a url shortening service like bit.ly.
+
+### Programming Paradigms
+* Please describe functional programming in JavaScript and when you might consider using it?
+
+### Computer Science
+* Explain what a stack is and what it is used for.
+* Merge Sort
+* Depth First Traversal of BST
+* Given a LinkedList with four nodes, how would you remove the third node? How would you remove the head node?
+* Given a BST, print all paths from root node to leaves (common fb question)
+
+### LEETCODE Questions
+
+* Given five candles, each candle yields one residue when it completes burning. For every two residues, we can create a new candle. Write a function that returns the greatest number of candles we can burn if we reuse the residue.
+
+* Write a function that takes in an input array [1, 2, 3, 4, 5] and returns an output array [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]. What is the big O notation of your solution?
+
+* Write a function that takes in an input array [1, 3, 3, 4, 5, 1, 6, 1] and returns an output array [4, 5, 6]. What is the big O notation of your solution?
+
+* Return the first duplicate of an array of integers
+
+* You have a shit computer with 64 kb of RAM. Given a huge data set of unsorted integers (think millions) how would you sort these with the memory constraints in mind. (You can only read in a certain amount of data at one time, but are not limited to the number of actual files you create/read/write to on disk)
+
+* Flatten Array iteratively/recursively (DEEPLY NOT SHALLOW)
+
+* Translate an inputted number to its alphabetical value
+
+* Given an array of buildings that have height, and an x start and endpoint, write a function that outputs an array of (x,y) coordinates representing vertices of the sillohouette of the buildings. (leetcode hard)
+
 
 
 
